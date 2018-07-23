@@ -8,6 +8,6 @@ export default class FilterArr {
         return element;
       }
     });
-    console.log(newArr);
+    //console.log(newArr);
   }
 }
