@@ -5,9 +5,12 @@ export default class FilterArr {
   filtered(arr) {
     let newArr = this.arr.filter(function(element, index) {
       if( index%2) {
-        return element;
+        return true;
+      }else{
+        return false;
       }
     });
-    //console.log(newArr);
+    /* console.log(this.arr);
+    console.log(newArr); */
   }
 }
