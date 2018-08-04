@@ -4,10 +4,8 @@ export default class Sorted {
   }
   sortedObjects(arr) {
     this.arr.sort(function(a,b) {
-      if(a.id > b.id) {
-        return true;
-      }
+      return a.id > b.id;
     });
-    //console.log(this.arr);
+    return this.arr;
   }
 }

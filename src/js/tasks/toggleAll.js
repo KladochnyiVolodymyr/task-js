@@ -3,9 +3,6 @@ export default class ToggleAll {
     this.arr = arr;
   }
   toggleAll(arr) {
-    /* let arrStatus = this.arr.every(function(status) {
-      return (status.isCompleted === false);
-    }); */
     let arrStatusTest = this.arr.every(function(status) {
       return (status.isCompleted === true);
     });
@@ -18,7 +15,7 @@ export default class ToggleAll {
         item.isCompleted = true;
       });
     }
-    console.log(this.arr);
+    //console.log(this.arr);
   }
 }
   

@@ -10,7 +10,6 @@ export default class FilterArr {
         return false;
       }
     });
-    /* console.log(this.arr);
-    console.log(newArr); */
+    return newArr;
   }
 }
