@@ -3,6 +3,7 @@ import FilterArr from './tasks/filter';
 import Sorted from './tasks/sorted';
 import Map from './tasks/loopMap';
 import ToggleAll from './tasks/toggleAll';
+import capitalize from './tasks/capitalize';
 sayHello();
 
 let test = new FilterArr([10,'',0,2, 8, 6, 9, 11, 5, 32, 1]);
@@ -35,16 +36,5 @@ let toggle = new ToggleAll(
 );
 toggle.toggleAll();
 
-
-function capitalize(str) {
-  var arr = str.split(' ');
-  var newArr = [];
-  for(var i=0; i < arr.length; i++) {
-    var res = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
-    newArr.push(res);
-  }
-  console.log(newArr);
-  return newArr;
-}
 
 capitalize('Lorem ipsum dolor sit amet, ius no quas dissentiunt, ex aeque phaedrum mel');
