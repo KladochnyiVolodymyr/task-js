@@ -4,6 +4,7 @@ import Sorted from './tasks/sorted';
 import Map from './tasks/loopMap';
 import ToggleAll from './tasks/toggleAll';
 import capitalize from './tasks/capitalize';
+import AverageAge from './tasks/averageAge';
 sayHello();
 
 let test = new FilterArr([10,'',0,2, 8, 6, 9, 11, 5, 32, 1]);
@@ -38,3 +39,14 @@ toggle.toggleAll();
 
 
 capitalize('Lorem ipsum dolor sit amet, ius no quas dissentiunt, ex aeque phaedrum mel');
+
+let average = new AverageAge(
+  [
+    {type: 'dog', age: 3 },
+    {type: 'dog', age: 8 },
+    {type: 'cat', age: 3 },
+    {type: 'dog', age: 4 },
+    {type: 'cat', age: 6 },
+  ]
+);
+average.averageAge();
