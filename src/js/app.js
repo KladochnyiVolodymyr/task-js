@@ -46,7 +46,11 @@ let average = new AverageAge(
     {type: 'dog', age: 8 },
     {type: 'cat', age: 3 },
     {type: 'dog', age: 4 },
-    {type: 'cat', age: 6 },
+    {type: 'cat', age: 6 }
   ]
 );
 average.averageAge();
+
+
+var arr = [1, 2, 3, 4, 5];
+

@@ -3,12 +3,12 @@ export default class AverageAge {
     this.arr = arr;
   }
   averageAge(arr) {
-    let age = this.arr.filter(function(element) {
-      return element.age;
+    let dogs = this.arr.filter(function(element) {
+      return element.type === 'dog';
     });
-    let res = age.reduce(function() {
-      
-    });
+    let res = dogs.reduce(function(sum, current) {
+      return sum + current.age;
+    },0);
+    console.log(res/dogs.length);
   }
 }
-  
